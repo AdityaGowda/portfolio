@@ -17,12 +17,33 @@
 
 body {
   color: var(--foreground);
+  font-family: "Poppins";
   background: var(--background);
 }
-
 .header {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+.main-header {
+  font-family: "Poppins-semibold", sans-serif;
 }
 .subHeader {
   font-family: "Roboto Mono";
+}
+
+.card-shadow {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border: 1px solid #ffffff1f;
+}
+
+.experienceDetails {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  transition-delay: 1s;
+}
+
+.svgTransform {
+  transform: rotate(180deg);
 }

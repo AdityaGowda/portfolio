@@ -21,7 +21,7 @@ export default function NavBar() {
           Adithya_M_R
         </span>
         <motion.div
-          className="text-2xl text-green-400  ml-3 mr-3 overflow-hidden whitespace-nowrap subHeader"
+          className="text-2xl text-green-400 max-w-full  ml-3 mr-3 overflow-hidden whitespace-nowrap subHeader"
           animate={{ width: hover ? 235 : 0 }}
           initial={{ width: 0 }}
           transition={{ duration: 0.25, ease: "easeInOut" }}

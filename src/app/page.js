@@ -1,13 +1,17 @@
-import { DownArrow } from "@/components/downArrow";
-import NameBanner from "@/components/name";
-import NavBar from "@/components/navBar";
+import Experience from "@/components/experience/experience";
+import Footer from "@/components/footer/footer";
+import Home from "@/components/home/home";
+import MyWork from "@/components/myWork/mywork";
+import Projects from "@/components/projects/projects";
 
 export default function Page() {
   return (
-    <section className="flex flex-col justify-between p-16 items-center h-screen">
-      <NavBar />
-      <NameBanner />
-      <DownArrow />
-    </section>
+    <>
+      <Home />
+      <MyWork />
+      <Projects />
+      <Experience />
+      <Footer />
+    </>
   );
 }
