@@ -1,17 +1,15 @@
-import Canvas from "@/components/canvas";
-import { DownArrow } from "@/components/downArrow";
-import NameBanner from "@/components/name";
-import NavBar from "@/components/navBar";
+import Experience from "@/components/experience/experience";
+import Home from "@/components/home/home";
+import MyWork from "@/components/myWork/mywork";
+import Projects from "@/components/projects/projects";
 
 export default function Page() {
   return (
     <>
-      <section className="flex flex-col justify-between p-10 items-center h-screen">
-        <NavBar />
-        <NameBanner />
-        <DownArrow />
-        <Canvas />
-      </section>
+      <Home />
+      <MyWork />
+      <Projects />
+      <Experience />
     </>
   );
 }
