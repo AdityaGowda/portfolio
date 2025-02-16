@@ -5,7 +5,7 @@ import NavBar from "./navBar";
 
 export default function Home() {
   return (
-    <section className="flex flex-col justify-between p-10 items-center h-screen">
+    <section className="flex flex-col justify-between p-12 items-center h-screen">
       <NavBar />
       <NameBanner />
       <DownArrow />

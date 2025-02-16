@@ -17,7 +17,7 @@ export default function NavBar() {
         onMouseLeave={() => setHover(false)}
       >
         <span className="font-extrabold text-2xl">&lt;</span>
-        <span className="hl-blue text-2xl text-sky-300 subHeader">
+        <span className="hl-blue text-2xl text-sky-300 ml-1 subHeader">
           Adithya_M_R
         </span>
         <motion.div
@@ -30,7 +30,7 @@ export default function NavBar() {
           onClick=&#123;reload&#125;
         </motion.div>
 
-        <span className="text-purple-600 font-extrabold text-2xl ">/</span>
+        <span className="text-purple-600 font-extrabold text-2xl mr-1">/</span>
         <span className="font-extrabold text-2xl">&gt;</span>
       </div>
     </div>

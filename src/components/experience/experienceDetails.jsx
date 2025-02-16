@@ -1,5 +1,6 @@
 import Image from "next/image";
 import icons from "@/components/icons/getIcon";
+import Badge from "./badge";
 
 export default function ExperienceDetails({
   logo = "#",
@@ -7,10 +8,18 @@ export default function ExperienceDetails({
   company,
   description,
   tech = [],
+  companyLink,
 }) {
   return (
-    <div className="experienceDetails p-4 mt-5 mb-5 flex flex-col bg-neutral-950 text-wrap transition-all duration-400 ease-in-out overflow-auto rounded-lg gap-4 ">
-      {/* <Image src={logo} className="logo" id="urbanpro" alt="logo" /> */}
+    <div className="p-4 mt-5 mb-5 flex flex-col text-wrap  rounded-lg gap-4 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white ">
+      <Image
+        src={logo}
+        className="logo"
+        id="urbanpro"
+        alt="logo"
+        width="130"
+        height="130"
+      />
       <div className="locationDetails flex gap-3 items-center">
         <span>
           <icons.Location />
@@ -18,17 +27,23 @@ export default function ExperienceDetails({
         <span>{location}</span>
       </div>
 
-      <div className="companyDetails flex gap-3 items-center">
-        <span>
-          <icons.LineLink />
-        </span>
-        <span>{company}</span>
+      <div className="companyDetails">
+        <a href={companyLink} className="flex gap-3 items-center">
+          <span>
+            <icons.LineLink />
+          </span>
+          <span>{company}</span>
+        </a>
       </div>
       <p>{description}</p>
-      <div className="skills">
+      <div className="skills flex gap-4">
         {tech.length > 0 &&
           tech.map((v, i) => {
-            return <Badge text={v} />;
+            return (
+              <span key={i}>
+                <Badge text={v} />
+              </span>
+            );
           })}
       </div>
     </div>

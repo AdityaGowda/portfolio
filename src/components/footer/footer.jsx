@@ -3,7 +3,7 @@ import icons from "@/components/icons/getIcon";
 
 export default function Footer() {
   return (
-    <section className="p-20 text-center flex flex-col gap-10">
+    <section className="p-20 text-center flex flex-col gap-10 bg-[#0022447e]">
       <div className="flex justify-center gap-10  cursor-pointer ">
         <a href="#">
           <Image

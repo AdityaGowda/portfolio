@@ -10,9 +10,9 @@ export default function Card({
 }) {
   console.log(tech);
   return (
-    <div className="max-w-sm rounded overflow-hidden  rounded-xl card-shadow cursor-pointer">
-      <Image className="w-full" src={mainImage} alt="Sunset in the mountains" />
-      <div className="px-6 py-4">
+    <div className="max-w-2xl rounded  rounded-xl card-shadow cursor-pointer absolute transition-all duration-300 hover:z-10 hover:scale-105">
+      <Image src={mainImage} alt="Elearn" />
+      <div className="px-6 py-4 h-44">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-neutral-300 text-base">{description}</p>
       </div>
@@ -23,7 +23,7 @@ export default function Card({
               return (
                 <Image
                   key={i}
-                  className="bg-black w-9 h-9 border-2 border-white rounded-full dark:border-gray-800"
+                  className=" w-9 h-9 rounded-full"
                   src={v}
                   alt=""
                 />
