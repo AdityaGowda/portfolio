@@ -26,7 +26,7 @@ function ExperienceDetailsDropDown({
         timeLine={timeLine}
       />
       <div
-        className="w-3/5 transition-all duration-500 ease-in-out overflow-hidden"
+        className="w-3/5 exp-dropdown transition-all duration-500 ease-in-out overflow-hidden"
         style={{
           maxHeight: dropDown ? "450px" : "0px",
           opacity: dropDown ? "1" : "0",
@@ -56,34 +56,36 @@ export default function Experience() {
   ];
   const techKodnest = ["JavaScript", "HTML/CSS", "React"];
   return (
-    <section className="p-20">
-      <p className="header text-center text-7xl mb-16 font-extrabold ml-auto mr-auto flex flex-col">
-        Professional <span> Experience</span>
-      </p>
-      <div className="flex flex-col gap-7">
-        <ExperienceDetailsDropDown
-          title={"Web UI Developer @ UrbanPro"}
-          timeLine={"2023 June -Present"}
-          location={"Bangalore"}
-          company={"UrbanPro"}
-          companyLink={"https://www.urbanpro.com/"}
-          description={
-            "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility. Built over 50% of Brave's reusable component library and assisted in implementing GraphQL for efficient API data fetching."
-          }
-          tech={techUrbanpro}
-          logo={urbanpro}
-        />
-        <ExperienceDetailsDropDown
-          title={"Intern @ Kodnest"}
-          timeLine={"2022 Dec-2023 May"}
-          location={"Bangalore"}
-          company={"Kodnest"}
-          companyLink={"https://www.kodnest.com/"}
-          description={
-            "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility. Built over 50% of Brave's reusable component library and assisted in implementing GraphQL for efficient API data fetching."
-          }
-          logo={kodnest}
-        />
+    <section className="experience h-full">
+      <div className="flex flex-col justify-center items-center p-10 mt-64">
+        <p className="header subTitle text-center text-7xl mb-16 font-extrabold ml-auto mr-auto flex flex-col">
+          Professional <span> Experience</span>
+        </p>
+        <div className="flex flex-col gap-7">
+          <ExperienceDetailsDropDown
+            title={"Web UI Developer @ UrbanPro"}
+            timeLine={"2023 June -Present"}
+            location={"Bangalore"}
+            company={"UrbanPro"}
+            companyLink={"https://www.urbanpro.com/"}
+            description={
+              "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility. Built over 50% of Brave's reusable component library and assisted in implementing GraphQL for efficient API data fetching."
+            }
+            tech={techUrbanpro}
+            logo={urbanpro}
+          />
+          <ExperienceDetailsDropDown
+            title={"Intern @ Kodnest"}
+            timeLine={"2022 Dec-2023 May"}
+            location={"Bangalore"}
+            company={"Kodnest"}
+            companyLink={"https://www.kodnest.com/"}
+            description={
+              "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility. Built over 50% of Brave's reusable component library and assisted in implementing GraphQL for efficient API data fetching."
+            }
+            logo={kodnest}
+          />
+        </div>
       </div>
     </section>
   );

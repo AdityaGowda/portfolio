@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "max-950": { max: "950px" }, // Applies styles for screens <= 950px
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

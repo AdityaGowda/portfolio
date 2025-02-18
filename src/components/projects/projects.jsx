@@ -18,8 +18,8 @@ export default function Projects() {
   ];
 
   return (
-    <section className="p-20 ">
-      <div className="flex justify-center items-center gap-16 mb-16 relative h-[700] ">
+    <div className="mt-56 p-10">
+      <div className="flex flex-wrap gap-16 justify-center">
         <Card
           mainImage={elearn}
           title={"E-learn"}
@@ -28,6 +28,7 @@ export default function Projects() {
           }
           tech={techImageCard1}
           telegram={techImages.telegram}
+          customClass={"left-[0%] z-[40]"}
         />
         <Card
           mainImage={portfolio}
@@ -36,8 +37,10 @@ export default function Projects() {
             "DigiCall is a full-stack video meeting web app built with React, Node.js, Express.js, and MySQL, featuring JWT-based authentication for secure login, real-time collaboration with 100ms, and seamless meeting scheduling with invite functionality. 📞💻"
           }
           tech={techImageCard4}
+          customClass={"left-[20%] z-[30]  hover:left-[30%]"}
         />
-
+      </div>
+      <div className="flex flex-wrap mt-16 gap-16 justify-center">
         <Card
           mainImage={portfolio}
           title={"Portfolio website"}
@@ -46,6 +49,7 @@ export default function Projects() {
           }
           tech={techImageCard3}
           telegram={techImages.telegram}
+          customClass={"left-[40%] z-[20] hover:left-[50%]"}
         />
         <Card
           mainImage={pizza}
@@ -55,8 +59,9 @@ export default function Projects() {
           }
           tech={techImageCard2}
           telegram={techImages.telegram}
+          customClass={"left-[60%] z-[10] hover:left-[70%]"}
         />
       </div>
-    </section>
+    </div>
   );
 }

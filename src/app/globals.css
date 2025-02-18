@@ -48,3 +48,41 @@ body {
 .spacing25 {
   letter-spacing: 0.25pc;
 }
+/* 
+@media screen and (max-width: 950px) {
+  .box {
+    margin-bottom: 20px;
+  }
+  .homePage {
+    padding-bottom: 30%;
+  }
+  .workContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  [class~="subTitle"] {
+    font-size: 62px;
+    width: 100%;
+    text-align: center;
+  }
+  .myworkDetails {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: unset;
+  }
+  .myWork {
+    margin-top: 14rem;
+  }
+  .workContainer {
+    padding: 10px;
+  }
+  .experienceTitle {
+    width: 75%;
+  }
+  .exp-details,
+  .exp-dropdown {
+    width: 75%;
+  }
+} */

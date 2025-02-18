@@ -9,7 +9,7 @@ export default function ExperienceTitle({
   return (
     <div
       className="experienceTitle p-6 bg-neutral-950 rounded-lg flex justify-between gap-14 bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-md
-ml-auto mr-auto w-3/5"
+ w-3/5"
       onClick={onclick}
     >
       <p className="text-lg">{title}</p>
