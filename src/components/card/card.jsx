@@ -7,12 +7,13 @@ export default function Card({
   description,
   tech = [],
   telegram = null,
+  customClass,
 }) {
   console.log(tech);
   return (
-    <div className="max-w-sm rounded overflow-hidden  rounded-xl card-shadow cursor-pointer">
-      <Image className="w-full" src={mainImage} alt="Sunset in the mountains" />
-      <div className="px-6 py-4">
+    <div className=" max-w-[500px] rounded-lg card-shadow cursor-pointer transition-all duration-300 transform hover:rotate  bg-white/5 backdrop-blur-md ">
+      <Image src={mainImage} alt="Elearn" className="rounded-t-md" />
+      <div className="px-6 py-4 h-[200px] text-white max-h-[600px] max-950:h-fit ">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-neutral-300 text-base">{description}</p>
       </div>
@@ -23,7 +24,7 @@ export default function Card({
               return (
                 <Image
                   key={i}
-                  className="bg-black w-9 h-9 border-2 border-white rounded-full dark:border-gray-800"
+                  className=" w-9 h-9 rounded-full"
                   src={v}
                   alt=""
                 />
