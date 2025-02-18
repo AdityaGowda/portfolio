@@ -18,7 +18,7 @@ function ExperienceDetailsDropDown({
   const [dropDown, setDropDown] = useState(false);
   console.log(dropDown);
   return (
-    <div className="exp-container relative flex flex-col items-center ">
+    <div className=" relative flex flex-col items-center  ">
       <ExperienceTitle
         onclick={() => setDropDown(!dropDown)}
         dropDown={dropDown}
@@ -26,7 +26,7 @@ function ExperienceDetailsDropDown({
         timeLine={timeLine}
       />
       <div
-        className="w-3/5 exp-dropdown transition-all duration-500 ease-in-out overflow-hidden"
+        className=" flex flex-col justify-center items-center transition-all duration-500 ease-in-out overflow-hidden w-full"
         style={{
           maxHeight: dropDown ? "450px" : "0px",
           opacity: dropDown ? "1" : "0",
@@ -57,11 +57,11 @@ export default function Experience() {
   const techKodnest = ["JavaScript", "HTML/CSS", "React"];
   return (
     <section className="experience h-full">
-      <div className="flex flex-col justify-center items-center p-10 mt-64">
-        <p className="header subTitle text-center text-7xl mb-16 font-extrabold ml-auto mr-auto flex flex-col">
+      <div className="flex flex-col justify-center items-center p-5 mt-64">
+        <p className="header subTitle text-center text-7xl mb-16 font-extrabold flex flex-col max-950:text-5xl">
           Professional <span> Experience</span>
         </p>
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-7 w-full">
           <ExperienceDetailsDropDown
             title={"Web UI Developer @ UrbanPro"}
             timeLine={"2023 June -Present"}

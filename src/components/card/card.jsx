@@ -11,9 +11,9 @@ export default function Card({
 }) {
   console.log(tech);
   return (
-    <div className="max-w-lg rounded-xl card-shadow cursor-pointer transition-all duration-300 transform hover:rotate  bg-white/5 backdrop-blur-md ">
-      <Image src={mainImage} alt="Elearn" className="rounded-xl" />
-      <div className="px-6 py-4 h-44 text-white">
+    <div className=" max-w-[500px] rounded-lg card-shadow cursor-pointer transition-all duration-300 transform hover:rotate  bg-white/5 backdrop-blur-md ">
+      <Image src={mainImage} alt="Elearn" className="rounded-t-md" />
+      <div className="px-6 py-4 h-[200px] text-white max-h-[600px] max-950:h-fit ">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-neutral-300 text-base">{description}</p>
       </div>

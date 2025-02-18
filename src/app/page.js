@@ -7,12 +7,12 @@ import Projects from "@/components/projects/projects";
 
 export default function Page() {
   return (
-    <main className="">
+    <div>
       <Home />
       <Expertise />
-      {/*  <MyWork />
-      <Experience /> */}
-      {/* <Footer /> */}
-    </main>
+      <MyWork />
+      <Experience />
+      <Footer />
+    </div>
   );
 }

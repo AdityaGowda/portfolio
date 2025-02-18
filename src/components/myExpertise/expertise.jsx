@@ -5,8 +5,8 @@ export default function Expertise() {
         <p className="header text-center text-7xl mb-16 font-extrabold max-950:text-5xl max-950:mb-10">
           My Expertise
         </p>
-        <div className="expertiseSubContainer flex justify-center items-center flex-wrap m-10">
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:mb-7">
+        <div className="expertiseSubContainer flex justify-center items-center flex-wrap m-10 max-950:w-[90%]">
+          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7">
             <div className="flex gap-5">
               <MdDevices />
               <p className="text-3xl mb-5 font-extrabold header">
@@ -23,7 +23,7 @@ export default function Expertise() {
             </div>
           </div>
           {/* 1 */}
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:mb-7">
+          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7">
             <div className="flex gap-5">
               <SiJavascript />
               <p className="text-3xl mb-5 font-extrabold header">
@@ -40,7 +40,7 @@ export default function Expertise() {
             </div>
           </div>
           {/* 1 */}
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:mb-7">
+          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7">
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
               <p className="text-4xl  font-extrabold header p-2">Devoops</p>

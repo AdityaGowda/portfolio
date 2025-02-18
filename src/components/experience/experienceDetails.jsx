@@ -11,7 +11,7 @@ export default function ExperienceDetails({
   companyLink,
 }) {
   return (
-    <div className="p-4 mt-5 mb-5 exp-details flex flex-col text-wrap  rounded-lg gap-4 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white ">
+    <div className="p-4 mt-5 mb-5 flex flex-col text-wrap  rounded-lg gap-4 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white  max-w-[900px]  ">
       <Image
         src={logo}
         className="logo"
@@ -36,7 +36,7 @@ export default function ExperienceDetails({
         </a>
       </div>
       <p>{description}</p>
-      <div className="skills flex gap-4">
+      <div className="skills flex gap-4 w-full flex-wrap">
         {tech.length > 0 &&
           tech.map((v, i) => {
             return (
