@@ -15,8 +15,7 @@ import tailwind from "./tailwind.svg";
 import linux from "./linux.png";
 import seo from "./seo.png";
 import telegram from "./telegram.svg";
-import linkedin from "./linkedin.png";
-import github from "./gitHub.png";
+
 
 function Plus(props) {
   return (

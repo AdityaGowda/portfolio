@@ -13,7 +13,7 @@ export default function ExperienceDetails({
   return (
     <div className="p-4 mt-5 mb-5 flex flex-col text-wrap  rounded-lg gap-4 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white  max-w-[900px]  ">
       <Image
-        src={logo}
+        src={`/icons/${logo}`}
         className="logo"
         id="urbanpro"
         alt="logo"
