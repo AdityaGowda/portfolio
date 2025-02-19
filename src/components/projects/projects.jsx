@@ -7,14 +7,22 @@ import * as image from "@/components/icons/getIcon";
 export default function Projects() {
   const techImages = image.default;
   console.log(image);
-  let techImageCard1 = [techImages.html, techImages.css, techImages.javascript];
-  let techImageCard2 = [techImages.html, techImages.css, techImages.javascript];
-  let techImageCard3 = [techImages.html, techImages.nextjs];
+  let techImageCard1 = [
+    "/icons/html.svg",
+    "/icons/css.svg",
+    "/icons/javascript.svg",
+  ];
+  let techImageCard2 = [
+    "/icons/html.svg",
+    "/icons/css.svg",
+    "/icons/javascript.svg",
+  ];
+  let techImageCard3 = ["/icons/html.svg", "/icons/nextjs.svg"];
   let techImageCard4 = [
-    techImages.react,
-    techImages.nodejs,
-    techImages.express,
-    techImages.mysql,
+    "/icons/react.svg",
+    "/icons/nodejs.svg",
+    "/icons/expressjs.svg",
+    "/icons/mysql.svg",
   ];
 
   return (
