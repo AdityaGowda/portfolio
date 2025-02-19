@@ -64,7 +64,7 @@ export default function Expertise() {
               <span className="text-[#636668]">&lt;/h3&gt;</span>
             </div>
           </motion.div>
-          {/* 1 */}
+          {/* 2 */}
           <motion.div
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
             initial={{ opacity: 0, y: 90 }}
