@@ -1,6 +1,9 @@
+import React from "react";
+import { motion } from "framer-motion";
 import Canvas from "./canvas";
 import { DownArrow } from "./downArrow";
 import NameBanner from "./name";
+
 import NavBar from "./navBar";
 
 export default function Home() {

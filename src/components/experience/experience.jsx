@@ -4,6 +4,7 @@ import ExperienceDetails from "./experienceDetails";
 import ExperienceTitle from "./experienceTitle";
 import urbanpro from "@/components/icons/urbanpro.png";
 import kodnest from "@/components/icons/kodnest.png";
+import { motion } from "framer-motion";
 
 function ExperienceDetailsDropDown({
   title,
@@ -58,10 +59,21 @@ export default function Experience() {
   return (
     <section className="experience h-full">
       <div className="flex flex-col justify-center items-center p-5 mt-64">
-        <p className="header subTitle text-center text-7xl mb-16 font-extrabold flex flex-col max-950:text-5xl">
+        <motion.p
+          className="header subTitle text-center text-7xl mb-16 font-extrabold flex flex-col max-950:text-5xl"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
           Professional <span> Experience</span>
-        </p>
-        <div className="flex flex-col gap-7 w-full">
+        </motion.p>
+        <motion.div
+          className="flex flex-col gap-7 w-full"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.9 }}
+        >
           <ExperienceDetailsDropDown
             title={"Web UI Developer @ UrbanPro"}
             timeLine={"2023 June -Present"}
@@ -85,7 +97,7 @@ export default function Experience() {
             }
             logo={kodnest}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
