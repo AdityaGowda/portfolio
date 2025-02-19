@@ -34,7 +34,6 @@ export default function Expertise() {
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2"
               >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
               </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>
@@ -61,7 +60,6 @@ export default function Expertise() {
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
               >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
               </motion.p>
               <span className="text-[#636668]">&lt;/h3&gt;</span>
             </div>
@@ -86,7 +84,6 @@ export default function Expertise() {
                 transition={{ duration: 0.4 }}
               >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
               </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>

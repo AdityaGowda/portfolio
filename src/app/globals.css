@@ -10,8 +10,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(135deg, #000428 0%, #004e92 100%);
-    --foreground: #ededed;
+    /* --background: linear-gradient(
+      15deg,
+      #000010 5%,
+      #01030f 60%,
+      rgba(2, 12, 48, 0.911) 80%,
+      #020c30 95%
+    ); */
+
+    --background: linear-gradient(
+      15deg,
+      #16163a 5%,
+      /* middle */ #01081b 60%,
+      /* top*/ rgba(2, 12, 48, 0.85) 80%,
+      /* Lower opacity for smoother blend */ #020c30 95%
+    );
+
+    --foreground: #ffffff;
   }
 }
 
@@ -47,4 +62,10 @@ body {
 
 .spacing25 {
   letter-spacing: 0.25pc;
+}
+
+#__next-build-watcher,
+#nextjs-toast,
+#nextjs-static-indicator-toast-wrapper {
+  display: none !important;
 }
