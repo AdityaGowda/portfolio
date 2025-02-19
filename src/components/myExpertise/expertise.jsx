@@ -1,12 +1,24 @@
+"use client";
+import { motion } from "framer-motion";
 export default function Expertise() {
   return (
     <section className="expertiseContainer">
       <div className="flex flex-col justify-center items-center">
-        <p className="header text-center text-7xl mb-16 font-extrabold max-950:text-5xl max-950:mb-10">
+        <motion.p
+          className="header text-center text-7xl mb-16 font-extrabold max-950:text-5xl max-950:mb-10"
+          initial={{ opacity: 0, y: 70 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
           My Expertise
-        </p>
+        </motion.p>
         <div className="expertiseSubContainer flex justify-center items-center flex-wrap m-10 max-950:w-[90%]">
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7">
+          <motion.div
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
             <div className="flex gap-5">
               <MdDevices />
               <p className="text-3xl mb-5 font-extrabold header">
@@ -15,15 +27,24 @@ export default function Expertise() {
             </div>
             <div className="">
               <span className="text-[#636668]">&lt;h3&gt;</span>
-              <p className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2">
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2"
+              >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
-              </p>
+              </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>
-          </div>
+          </motion.div>
           {/* 1 */}
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7">
+          <motion.div
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
             <div className="flex gap-5">
               <SiJavascript />
               <p className="text-3xl mb-5 font-extrabold header">
@@ -32,28 +53,41 @@ export default function Expertise() {
             </div>
             <div className="">
               <span className="text-[#636668]">&lt;h3&gt;</span>
-              <p className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2">
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
+              >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
-              </p>
+              </motion.p>
               <span className="text-[#636668]">&lt;/h3&gt;</span>
             </div>
-          </div>
+          </motion.div>
           {/* 1 */}
-          <div className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7">
+          <motion.div
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
+            initial={{ opacity: 0, y: 90 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
               <p className="text-4xl  font-extrabold header p-2">Devoops</p>
             </div>
             <div className="">
               <span className="text-[#636668]">&lt;h3&gt;</span>
-              <p className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2">
+              <motion.p
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+              >
                 Experienced in developing both front back end technologies.
-                Python, Ruby, JavaScript, TypeScript.
-              </p>
+              </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
