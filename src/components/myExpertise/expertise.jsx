@@ -17,7 +17,7 @@ export default function Expertise() {
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.3}}
           >
             <div className="flex gap-5">
               <MdDevices />
@@ -30,10 +30,11 @@ export default function Expertise() {
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
+                transition={{ duration: 0.3 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2"
               >
-                Experienced in developing both front back end technologies.
+                Experienced in developing both front & back end technologies.
+                JavaScript, NodeJs, ExpressJs
               </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>
@@ -59,7 +60,8 @@ export default function Expertise() {
                 transition={{ duration: 0.4 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
               >
-                Experienced in developing both front back end technologies.
+                Passionate about UI with 2+ years of experience in HTML, CSS,
+                JS, jQuery, React, and Next.js.
               </motion.p>
               <span className="text-[#636668]">&lt;/h3&gt;</span>
             </div>
@@ -69,11 +71,11 @@ export default function Expertise() {
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
-              <p className="text-4xl  font-extrabold header p-2">Devoops</p>
+              <p className="text-4xl  font-extrabold header p-2">DevOps</p>
             </div>
             <div className="">
               <span className="text-[#636668]">&lt;h3&gt;</span>
@@ -81,9 +83,10 @@ export default function Expertise() {
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
+                transition={{ duration: 0.5 }}
               >
-                Experienced in developing both front back end technologies.
+                Hands-on experience with GCP and Azure, specializing in Docker,
+                Linux, automation, and networking
               </motion.p>
               <span className="text-[#636668]">&lt;/h3 &gt;</span>
             </div>

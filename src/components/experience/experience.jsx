@@ -2,8 +2,6 @@
 import { useState } from "react";
 import ExperienceDetails from "./experienceDetails";
 import ExperienceTitle from "./experienceTitle";
-import urbanpro from "@/components/icons/urbanpro.png";
-import kodnest from "@/components/icons/kodnest.png";
 import { motion } from "framer-motion";
 
 function ExperienceDetailsDropDown({
@@ -17,9 +15,9 @@ function ExperienceDetailsDropDown({
   companyLink,
 }) {
   const [dropDown, setDropDown] = useState(false);
-  console.log(dropDown);
+
   return (
-    <div className=" relative flex flex-col items-center  ">
+    <div className=" relative flex flex-col items-center ">
       <ExperienceTitle
         onclick={() => setDropDown(!dropDown)}
         dropDown={dropDown}
@@ -46,16 +44,25 @@ function ExperienceDetailsDropDown({
   );
 }
 export default function Experience() {
-  const techUrbanpro = [
+  let technologyUrbanpro = [
     "JavaScript",
     "React",
     "NextJs",
     "NodeJs",
-    "Jquery",
-    "DevOops",
+    "JQuery",
+    "DevOps",
     "Cloud",
   ];
-  const techKodnest = ["JavaScript", "HTML/CSS", "React"];
+  const urbanProDescription = [
+    "Transformed design mockups into responsive layouts using ReactJS, JavaScript, HTML, and CSS.",
+    "Built and launched the microservice-based TutorJobs portal using Next.js and Node.js, achieving 100k clicks in the first month.",
+    "Implemented effective SEO and international features, leading to a 20% increase in user registrations.",
+    "Recognized as the Best Performer in the Team for 2021 and 2022, with multiple Performer of the Month awards.",
+  ];
+  const kodnestDescription = [
+    "Developed strong frontend skills in HTML, CSS, and JavaScript (ES6), with hands-on experience and a deep understanding of advanced concepts like asynchronous programming, closures, and event-driven architecture.",
+  ];
+  let technologyKodnest = ["HTML", "CSS", "JavaScript", "DOM", "OOPS", "Java"];
   return (
     <section className="experience h-full">
       <div className="flex flex-col justify-center items-center p-5 mt-64">
@@ -76,26 +83,23 @@ export default function Experience() {
         >
           <ExperienceDetailsDropDown
             title={"Web UI Developer @ UrbanPro"}
-            timeLine={"2023 June -Present"}
+            timeLine={"2023 June - Present"}
             location={"Bangalore"}
             company={"UrbanPro"}
             companyLink={"https://www.urbanpro.com/"}
-            description={
-              "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility component library and assisted in implementing"
-            }
-            tech={techUrbanpro}
-            logo={urbanpro}
+            description={urbanProDescription}
+            tech={technologyUrbanpro}
+            logo="UrbanPro"
           />
           <ExperienceDetailsDropDown
             title={"Intern @ Kodnest"}
-            timeLine={"2022 Dec-2023 May"}
+            timeLine={"2022 Dec - 2023 May"}
             location={"Bangalore"}
             company={"Kodnest"}
             companyLink={"https://www.kodnest.com/"}
-            description={
-              "Led the Creators platform rebuild with React and Next.js 13, improving performance, scalability, and accessibility.component library and assisted in implementin"
-            }
-            logo={kodnest}
+            description={kodnestDescription}
+            tech={technologyKodnest}
+            logo="KodNest"
           />
         </motion.div>
       </div>

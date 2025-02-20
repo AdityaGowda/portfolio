@@ -13,7 +13,7 @@ const Canvas = () => {
     const rays = [];
     const stars = [];
     const numRays = 9; // Number of rays
-    const numStars = 100; // Number of stars
+    const numStars = 150; // Number of stars
 
     // Function to generate a random color
     function getRandomColor() {
@@ -67,7 +67,7 @@ const Canvas = () => {
 
       rays.forEach((ray) => {
         // Update the progress of the ray based on depth
-        ray.progress += 1 * ray.depth; // Adjust speed here
+        ray.progress += 0.8 * ray.depth; // Adjust speed here
 
         // Calculate the current endpoint of the ray
         const endX = ray.startX - ray.length * (ray.progress / 500); // Move left
@@ -84,7 +84,7 @@ const Canvas = () => {
         // Draw the endpoint as a colored dot
         ctx.fillStyle = ray.color; // Random color for the dot
         ctx.beginPath();
-        ctx.arc(endX, endY, 2 / ray.depth, 0, Math.PI * 2); // Adjust dot size based on depth
+        ctx.arc(endX, endY, 3.5 / ray.depth, 0, Math.PI * 2); // Adjust dot size based on depth
         ctx.fill();
 
         // Reset the ray if it goes off-screen

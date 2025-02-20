@@ -1,7 +1,16 @@
-export default function Badge({ text }) {
+export default function Badge({ tech = [] }) {
   return (
-    <p className="badge bg-slate-500 max-w-fit flex pt-2 pb-2 pl-5 pr-5 rounded-3xl">
-      {text}
-    </p>
+    <>
+      {tech.map((v, i) => {
+        return (
+          <p
+            className="badge bg-slate-500 max-w-fit flex pt-2 pb-2 pl-5 pr-5 rounded-3xl"
+            key={i}
+          >
+            {v}
+          </p>
+        );
+      })}
+    </>
   );
 }

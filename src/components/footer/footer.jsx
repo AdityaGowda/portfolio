@@ -1,6 +1,4 @@
 import Image from "next/image";
-import icons from "@/components/icons/getIcon";
-
 export default function Footer() {
   return (
     <section
@@ -8,7 +6,7 @@ export default function Footer() {
    justify-end flex-col gap-10 mt-60 "
     >
       <div className="flex justify-center gap-10  cursor-pointer ">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/adithya-dev/">
           <Image
             src="/icons/linkedin.png"
             className=""
@@ -17,7 +15,7 @@ export default function Footer() {
             alt="linkedin"
           />
         </a>
-        <a href="#">
+        <a href="https://github.com/AdityaGowda">
           <Image
             src="/icons/gitHub.png"
             className=""
