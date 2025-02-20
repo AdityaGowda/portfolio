@@ -5,7 +5,7 @@ import Card from "../card/card";
 export default function Projects() {
   let techImageCard1 = ["html.svg", "css.svg", "javascript.svg"];
   let techImageCard2 = ["html.svg", "css.svg", "javascript.svg"];
-  let techImageCard3 = ["html.svg", "nextjs.svg"];
+  let techImageCard3 = ["html.svg", "nextjs.svg", "tailwind.svg"];
   let techImageCard4 = [
     "react.svg",
     "nodejs.svg",
