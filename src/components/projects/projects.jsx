@@ -14,12 +14,12 @@ export default function Projects() {
   ];
 
   return (
-    <div className="mt-14 p-5">
+    <div className="mt-14">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="flex flex-wrap gap-16 justify-center items-center"
       >
         <Card
@@ -47,7 +47,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className="flex flex-wrap mt-16 gap-16 justify-center"
       >
         <Card

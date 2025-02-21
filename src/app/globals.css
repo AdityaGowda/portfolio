@@ -4,8 +4,15 @@
 @tailwind utilities;
 
 :root {
-  --background: black;
-  --foreground: #868282;
+  --background: linear-gradient(
+    15deg,
+    #0c0c25 5%,
+    /* middle */ #01081b 60%,
+    /* top*/ rgba(2, 12, 48, 0.85) 80%,
+    /* Lower opacity for smoother blend */ #020c30 95%
+  );
+
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +27,7 @@
 
     --background: linear-gradient(
       15deg,
-      #16163a 5%,
+      #0c0c25 5%,
       /* middle */ #01081b 60%,
       /* top*/ rgba(2, 12, 48, 0.85) 80%,
       /* Lower opacity for smoother blend */ #020c30 95%

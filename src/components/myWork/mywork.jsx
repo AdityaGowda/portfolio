@@ -18,7 +18,7 @@ export default function MyWork() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          viewport={{ amount: 0.9 }}
+          viewport={{ once: true, amount: 0.9 }}
           className="subHeader myworkDetails pt-10 text-2xl max-w-xl max-950:text-[1.2rem]"
         >
           Deployed scalable, responsive web applications using JavaScript,
@@ -28,6 +28,7 @@ export default function MyWork() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.9 }}
           className="subHeader myworkDetails pt-10 text-2xl max-w-xl  max-950:text-[1.2rem]"
         >
           Focused on creating high-performance, dynamic, and intuitive user
@@ -37,11 +38,11 @@ export default function MyWork() {
       </div>
       <div className="mt-56 p-5">
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
           viewport={{ amount: 0.9 }}
-          className="header subTitle text-6xl font-extrabold text-center  text-wrap  max-950:text-7xl"
+          className="header subTitle text-6xl font-extrabold text-center  text-wrap  max-950:text-5xl"
         >
           My Personal Projects
         </motion.p>
