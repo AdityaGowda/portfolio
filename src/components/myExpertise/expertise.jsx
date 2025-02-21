@@ -14,73 +14,79 @@ export default function Expertise() {
         </motion.p>
         <div className="expertiseSubContainer flex justify-center items-center flex-wrap m-10 max-950:w-[90%]">
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7"
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7 max-950:p-5 max-950:pt-7 max-950:m-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3}}
+            transition={{ duration: 0.3 }}
           >
             <div className="flex gap-5">
               <MdDevices />
-              <p className="text-3xl mb-5 font-extrabold header">
+              <p className="text-3xl mb-5 font-extrabold header max-950:text-2xl">
                 Software Development
               </p>
             </div>
             <div className="">
-              <span className="text-[#636668]">&lt;h3&gt;</span>
+              <span className="text-[#636668] max-950:text-sm">&lt;h3&gt;</span>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2"
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
                 Experienced in developing both front & back end technologies.
                 JavaScript, NodeJs, ExpressJs
               </motion.p>
-              <span className="text-[#636668]">&lt;/h3 &gt;</span>
+              <span className="text-[#636668] max-950:text-sm">
+                &lt;/h3 &gt;
+              </span>
             </div>
           </motion.div>
           {/* 1 */}
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:pt-7  max-950:p-5 max-950:m-2"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
             <div className="flex gap-5">
               <SiJavascript />
-              <p className="text-3xl mb-5 font-extrabold header">
+              <p className="text-3xl mb-5 font-extrabold header  max-950:text-2xl">
                 Frontend Dev JavaScript,React
               </p>
             </div>
             <div className="">
-              <span className="text-[#636668]">&lt;h3&gt;</span>
+              <span className="text-[#636668] max-950:text-sm">&lt;h3&gt;</span>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
                 Passionate about UI with 2+ years of experience in HTML, CSS,
                 JS, jQuery, React, and Next.js.
               </motion.p>
-              <span className="text-[#636668]">&lt;/h3&gt;</span>
+              <span className="text-[#636668] max-950:text-sm ">
+                &lt;/h3&gt;
+              </span>
             </div>
           </motion.div>
           {/* 2 */}
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7"
+            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:p-5 max-950:pt-7  max-950:m-2"
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
-              <p className="text-4xl  font-extrabold header p-2">DevOps</p>
+              <p className="text-4xl  font-extrabold header p-2max-950:text-3xl ">
+                DevOps
+              </p>
             </div>
             <div className="">
-              <span className="text-[#636668]">&lt;h3&gt;</span>
+              <span className="text-[#636668] max-950:text-sm">&lt;h3&gt;</span>
               <motion.p
-                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2"
+                className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -88,7 +94,9 @@ export default function Expertise() {
                 Hands-on experience with GCP and Azure, specializing in Docker,
                 Linux, automation, and networking
               </motion.p>
-              <span className="text-[#636668]">&lt;/h3 &gt;</span>
+              <span className="text-[#636668] max-950:text-sm">
+                &lt;/h3 &gt;
+              </span>
             </div>
           </motion.div>
         </div>

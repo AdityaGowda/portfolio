@@ -12,7 +12,7 @@ export default function ExperienceDetails({
 }) {
   return (
     <div className="p-4 mt-5 mb-5 flex flex-col text-wrap rounded-lg  gap-2 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white  max-w-[900px]  ">
-      <p className="logo text-5xl font-bold text-white ">
+      <p className="logo text-5xl font-bold text-white max-950:text-4xl">
         {logo}
       </p>
 
@@ -20,7 +20,7 @@ export default function ExperienceDetails({
         <span>
           <icons.Location />
         </span>
-        <span className="text-lg">{location}</span>
+        <span className="text-lg max-950:text-base">{location}</span>
       </div>
 
       <div className="companyDetails">
@@ -28,12 +28,12 @@ export default function ExperienceDetails({
           <span>
             <icons.LineLink />
           </span>
-          <span className="text-lg">{company}</span>
+          <span className="text-lg max-950:text-base">{company}</span>
         </a>
       </div>
       <ul className="mt-5">
         {description.map((item, index) => (
-          <li className="text-lg mt-2" key={index}>
+          <li className="text-lg mt-2 max-950:text-base" key={index}>
             {item}
           </li>
         ))}

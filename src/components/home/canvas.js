@@ -1,19 +1,37 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Canvas = () => {
   const canvasRef = useRef(null);
+  const [isMobile, setisMobile] = useState(false);
 
+  useEffect(() => {
+    if (window.innerWidth < 950) {
+      setisMobile(true);
+    } else {
+      setisMobile(false);
+    }
+  }, []);
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+
+    // Function to adjust canvas pixel ratio
+    const adjustCanvasSize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
+      ctx.scale(dpr, dpr);
+    };
+
+    adjustCanvasSize();
 
     const rays = [];
     const stars = [];
-    const numRays = 9; // Number of rays
-    const numStars = 150; // Number of stars
+    const numRays = isMobile ? 15 : 9; // Number of rays
+    const numStars = isMobile ? 250 : 180; // Number of stars
 
     // Function to generate a random color
     function getRandomColor() {
@@ -132,8 +150,7 @@ const Canvas = () => {
 
     // Handle window resize
     const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      adjustCanvasSize();
       drawBackground(); // Redraw the background on resize
     };
 
