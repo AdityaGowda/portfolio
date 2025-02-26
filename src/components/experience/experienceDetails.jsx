@@ -12,9 +12,9 @@ export default function ExperienceDetails({
 }) {
   return (
     <div className="p-4 mt-5 mb-5 flex flex-col text-wrap rounded-lg  gap-2 border-white/20 hover:bg-white/20 backdrop-blur-md  bg-white/10 text-white  max-w-[900px]  ">
-      <p className="logo text-5xl font-bold text-white max-950:text-4xl">
+      <h3 className="logo text-5xl font-bold text-white max-950:text-4xl">
         {logo}
-      </p>
+      </h3>
 
       <div className="locationDetails flex mt-5 gap-3 items-center">
         <span>

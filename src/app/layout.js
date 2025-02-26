@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Adithya | Portfolio",
+  title: "Adithya M R - Front-End Developer | Full Stack Developer",
   description:
-    "Showcasing my projects, skills, and experience in web development, cloud computing, and automation.",
+    "Welcome to Adithya's Portfolio – a front-end developer specializing in JavaScript frameworks like React, NextJs, and NodeJs, with expertise in DevOps and cloud technologies. I build scalable, high-performance web applications with a focus on modern UI/UX, responsiveness, and seamless deployments. Explore my projects to see how I blend front-end excellence with cloud-driven solutions!",
   keywords: [
     "Portfolio",
     "Web Development",
@@ -45,6 +45,7 @@ export const metadata = {
     "Software Engineering",
   ],
   author: "Adithya M R",
+  canonical: "https://adithya-dev.netlify.app/",
 };
 
 export default function RootLayout({ children }) {

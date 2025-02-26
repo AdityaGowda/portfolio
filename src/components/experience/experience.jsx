@@ -54,7 +54,10 @@ export default function Experience() {
     "Cloud",
   ];
   const urbanProDescription = [
-    "Transformed design mockups into responsive layouts using ReactJS, JavaScript, HTML, and CSS. Built and launched the microservice-based TutorJobs portal using Next.js and Node.js, achieving 100k clicks in the first month. Led feature development and enhancements, focusing on performance optimization, accessibility, and user experience improvements. Recognized as the Best Performer in the Team for 2023 and 2024, with multiple Performer of the Month awards.",
+    "Transformed design mockups into responsive layouts using ReactJS, JavaScript, HTML, and CSS.",
+    "Built and launched the microservice-based TutorJobs portal using Next.js and Node.js, achieving 100k clicks in the first month.",
+    " Led feature development and enhancements, focusing on performance optimization, accessibility, and user experience improvements.",
+    " Recognized as the Best Performer in the Team for 2023 and 2024, with multiple Performer of the Month awards.",
   ];
   const kodnestDescription = [
     "Developed strong frontend skills in HTML, CSS, and JavaScript (ES6), with hands-on experience and a deep understanding of advanced concepts like asynchronous programming, closures, and event-driven architecture.",
@@ -63,14 +66,14 @@ export default function Experience() {
   return (
     <section className="experience h-full">
       <div className="flex flex-col justify-center items-center p-5 mt-64">
-        <motion.p
+        <motion.h2
           className="header subTitle text-center text-7xl mb-16 font-extrabold flex flex-col max-950:text-5xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
           Professional <span> Experience</span>
-        </motion.p>
+        </motion.h2>
         <motion.div
           className="flex flex-col gap-7 w-full"
           initial={{ opacity: 0, y: 30 }}

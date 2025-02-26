@@ -5,7 +5,7 @@ export default function MyWork() {
   return (
     <section className="myWork  h-full mt-60">
       <div className="workContainer  max-950:p-5 pl-40">
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -13,7 +13,7 @@ export default function MyWork() {
           className="header subTitle text-8xl font-extrabold w-14 text-wrap  max-950:text-7xl"
         >
           My Work
-        </motion.p>
+        </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
