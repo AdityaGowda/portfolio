@@ -16,7 +16,7 @@ export default function ExperienceTitle({
  w-full   max-w-[900px] mx-15 max-950:w-max[500px]"
       onClick={onclick}
     >
-      <p className="text-[22px] max-950:text-[18px]">{title}</p>
+      <h3 className="text-[22px] max-950:text-[18px]">{title}</h3>
       <div className="flex items-center gap-7">
         <p className="text-[20px] max-950:hidden">{timeLine}</p>
 

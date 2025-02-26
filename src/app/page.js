@@ -8,11 +8,21 @@ import Projects from "@/components/projects/projects";
 export default function Page() {
   return (
     <div>
-      <Home />
-      <Expertise />
-      <MyWork />
-      <Experience />
-      <Footer />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="expertise">
+        <Expertise />
+      </div>
+      <div id="my-work">
+        <MyWork />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
