@@ -40,7 +40,7 @@ export default function Projects() {
             "DigiCall is a full-stack video meeting web app built with React, Node.js, Express.js, and MySQL, featuring JWT-based authentication for secure login, real-time collaboration with 100ms, and seamless meeting scheduling with invite functionality. 📞💻"
           }
           tech={techImageCard4}
-          linkIcons="/icons/gitHub.png"
+          linkIcons="/icons/telegram.svg"
           projectLink={"https://github.com/AdityaGowda/Digicall"}
           created="present"
         />
