@@ -17,7 +17,7 @@ export default function Expertise() {
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7 max-950:p-5 max-950:pt-7 max-950:m-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ once: true, duration: 0.3 }}
           >
             <div className="flex gap-5">
               <MdDevices />
@@ -30,7 +30,7 @@ export default function Expertise() {
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ once: true, duration: 0.3 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
                 Experienced in developing both front & back end technologies.
@@ -46,7 +46,7 @@ export default function Expertise() {
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:pt-7  max-950:p-5 max-950:m-2"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ once: true, duration: 0.4 }}
           >
             <div className="flex gap-5">
               <SiJavascript />
@@ -59,7 +59,7 @@ export default function Expertise() {
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
+                transition={{ once: true, duration: 0.4 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
                 Passionate about UI with 2+ years of experience in HTML, CSS,
@@ -75,7 +75,7 @@ export default function Expertise() {
             className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:p-5 max-950:pt-7  max-950:m-2"
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ once: true, duration: 0.5 }}
           >
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
@@ -89,7 +89,7 @@ export default function Expertise() {
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ once: true, duration: 0.5 }}
               >
                 Hands-on experience with GCP and Azure, specializing in Docker,
                 Linux, automation, and networking

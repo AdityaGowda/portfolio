@@ -7,14 +7,18 @@ export default function Card({
   title,
   description,
   tech = [],
-  telegram = null,
+  linkIcons = null,
   projectLink,
+  created = "",
 }) {
   const [usedTechList, setUsedTechList] = useState([...tech]);
   return (
     <div className=" max-w-[500px] rounded-lg card-shadow cursor-pointer transition-all duration-300 transform hover:rotate  bg-white/5 backdrop-blur-md m-0 ">
       <div className="px-6 py-4 h-[200px] text-white max-h-[600px] max-950:h-fit ">
-        <div className="font-bold text-xl mb-2">{title}</div>
+        <div className="flex justify-between mt-1">
+          <div className="font-bold text-xl mb-2 ">{title}</div>
+          <span className="text-xs">{created}</span>
+        </div>
         <p className="text-neutral-300 text-base">{description}</p>
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-between">
@@ -32,10 +36,10 @@ export default function Card({
             );
           })}
         </div>
-        {telegram && (
+        {linkIcons && (
           <a href={projectLink}>
             <Image
-              src={telegram}
+              src={`${linkIcons}`}
               className="w-7 h-7"
               alt="github Repo link"
               width={100}

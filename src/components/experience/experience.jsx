@@ -54,10 +54,7 @@ export default function Experience() {
     "Cloud",
   ];
   const urbanProDescription = [
-    "Transformed design mockups into responsive layouts using ReactJS, JavaScript, HTML, and CSS.",
-    "Built and launched the microservice-based TutorJobs portal using Next.js and Node.js, achieving 100k clicks in the first month.",
-    "Implemented effective SEO and international features, leading to a 20% increase in user registrations.",
-    "Recognized as the Best Performer in the Team for 2021 and 2022, with multiple Performer of the Month awards.",
+    "Transformed design mockups into responsive layouts using ReactJS, JavaScript, HTML, and CSS. Built and launched the microservice-based TutorJobs portal using Next.js and Node.js, achieving 100k clicks in the first month. Led feature development and enhancements, focusing on performance optimization, accessibility, and user experience improvements. Recognized as the Best Performer in the Team for 2023 and 2024, with multiple Performer of the Month awards.",
   ];
   const kodnestDescription = [
     "Developed strong frontend skills in HTML, CSS, and JavaScript (ES6), with hands-on experience and a deep understanding of advanced concepts like asynchronous programming, closures, and event-driven architecture.",

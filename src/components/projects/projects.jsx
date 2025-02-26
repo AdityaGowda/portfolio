@@ -26,11 +26,12 @@ export default function Projects() {
           mainImage="/icons/eLearnImage.png"
           title={"E-learn"}
           description={
-            "E-Learn Web App is a responsive, multi-page frontend learning platform built with HTML, CSS, and JavaScript (ES6). It features an engaging user interface with dedicated pages for courses, course details, contact, about, login, and sign-up, providing a seamless and interactive educational experience. 📚🚀"
+            "E-Learn Web App is a responsive, multi-page frontend learning platform built with HTML, CSS, and JavaScript (ES6). 📱💻 It features an engaging user interface with dedicated pages for courses, course details, contact, about, login, and sign-up, providing a seamless and interactive educational experience. 📚🚀"
           }
           tech={techImageCard1}
-          telegram="/icons/telegram.svg"
+          linkIcons="/icons/telegram.svg"
           projectLink={"https://adityagowda.github.io/E-Learn-Web-App/"}
+          created="2020"
         />
         <Card
           mainImage="/icons/portfolio.png"
@@ -39,8 +40,9 @@ export default function Projects() {
             "DigiCall is a full-stack video meeting web app built with React, Node.js, Express.js, and MySQL, featuring JWT-based authentication for secure login, real-time collaboration with 100ms, and seamless meeting scheduling with invite functionality. 📞💻"
           }
           tech={techImageCard4}
-          telegram="/icons/gitHub.png"
+          linkIcons="/icons/gitHub.png"
           projectLink={"https://github.com/AdityaGowda/Digicall"}
+          created="present"
         />
       </motion.div>
       <motion.div
@@ -57,22 +59,24 @@ export default function Projects() {
             "A Portfolio website to showcase your skills and stand out in your field"
           }
           tech={techImageCard3}
-          telegram="/icons/telegram.svg"
+          linkIcons="/icons/telegram.svg"
           projectLink={
             "https://adityagowda.github.io/PizZza-API-based-web-app/"
           }
+          created="2025"
         />
         <Card
           mainImage="/icons/pizza.png"
           title={"PizzaHub"}
           description={
-            "PizZza Web App is an interactive recipe finder built with HTML5, CSS3, and JavaScript (ES6), utilizing a public API to fetch and display pizza recipes dynamically. Users can search for their favorite pizzas, explore ingredients, learn the cooking process, and adjust serving sizes for precise ingredient measurements. 🍕🔥"
+            "PizZza Web App is an interactive but non-responsive recipe finder built with HTML5, CSS3, and JavaScript (ES6), utilizing a public API to fetch and display pizza recipes dynamically. Users can search for their favorite pizzas, explore ingredients, learn the cooking process, and adjust serving sizes for precise ingredient measurements. this is not responsive 🚫📱"
           }
           tech={techImageCard2}
-          telegram="/icons/telegram.svg"
+          linkIcons="/icons/telegram.svg"
           projectLink={
             "https://adityagowda.github.io/PizZza-API-based-web-app/"
           }
+          created="2021"
         />
       </motion.div>
     </div>
