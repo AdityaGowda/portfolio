@@ -60,9 +60,7 @@ export default function Projects() {
           }
           tech={techImageCard3}
           linkIcons="/icons/telegram.svg"
-          projectLink={
-            "https://adityagowda.github.io/PizZza-API-based-web-app/"
-          }
+          projectLink={"https://adithya-dev.netlify.app/"}
           created="2025"
         />
         <Card
