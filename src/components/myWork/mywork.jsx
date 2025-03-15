@@ -9,7 +9,7 @@ export default function MyWork() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          viewport={{ amount: 0.9 }}
+          viewport={{ once: true, amount: 0.9 }}
           className="header subTitle text-8xl font-extrabold w-14 text-wrap  max-950:text-7xl"
         >
           My Work
