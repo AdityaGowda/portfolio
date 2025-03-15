@@ -71,6 +71,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.9 }}
         >
           Professional <span> Experience</span>
         </motion.h2>

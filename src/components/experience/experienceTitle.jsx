@@ -13,7 +13,7 @@ export default function ExperienceTitle({
       transition={{ duration: 0.4 }}
       viewport={{ once: true, amount: 0.5 }}
       className="experienceTitle p-6 bg-neutral-950 rounded-lg flex justify-between  bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-md
- w-full   max-w-[900px] mx-15 max-950:w-max[500px]"
+ w-full   max-w-[900px] mx-15 max-950:w-max[500px] cursor-pointer"
       onClick={onclick}
     >
       <h3 className="text-[22px] max-950:text-[18px]">{title}</h3>
