@@ -14,10 +14,11 @@
 
 ---
 ## 🌐 About This Portfolio
-This portfolio represents my professional presence on the web.  
-It is built using Next.js, Tailwind CSS, and Framer Motion, combining performance, modern design, and smooth animations.
+This portfolio represents my **professional presence** on the web.  
+It is built using **Next.js**, **Tailwind CSS**, and **Framer Motion**, combining performance, modern design, and smooth animations.
 
-The site highlights my experience, skills, and technical capabilities, along with selected project samples that demonstrate my work across frontend and full-stack development. It is structured to give companies, recruiters, and collaborators a clear understanding of what I do, how I build, and the technologies I know.
+The site highlights my **experience**, **skills**, and **technical capabilities**, along with selected **project samples** that demonstrate my work across **frontend** and **full-stack** development. It is structured to give **companies**, **recruiters**, and **collaborators** a clear understanding of what I do, how I build, and the **technologies I know**.
+
 
 ---
 
