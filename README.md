@@ -41,12 +41,10 @@ The site highlights my **experience**, **skills**, and **technical capabilities*
   
 ---
 ## 🏷️ Project Tags
-
 `portfolio` `nextjs` `tailwindcss` `framer-motion`  
 `personal-website` `frontend` `fullstack`  
 `react-root` `developer-portfolio` `professional-profile`  
 `projects-showcase` `netlify`  `modern-ui`
----
 
 ****
 ## 👨‍💻 Author  
