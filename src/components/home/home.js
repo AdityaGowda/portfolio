@@ -6,7 +6,7 @@ import NavBar from "./navBar";
 
 export default function Home() {
   return (
-    <section className=" homePage pb-48  pl-5 pr-5">
+    <section className="homePage pb-32 pl-5 pr-5">
       <div className="flex flex-col justify-between pt-12 pb-12 items-center h-screen ">
         <NavBar />
         <NameBanner />

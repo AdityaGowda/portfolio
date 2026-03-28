@@ -15,12 +15,12 @@ export default function NameBanner() {
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-xl font-medium mt-5 uppercase spacing25 subHeader max-950:text-[0.9pc] text-center"
+        className="text-3xl font-medium mt-5 uppercase spacing25 subHeader max-950:text-xl text-center"
       >
-        Front-End Developer, Web UI Developer
+        Software Engineer
       </motion.h2>
       <h1 className="sr-only">
-        Adithya - Full Stack Developer | Frontend Engineer | Software Developer
+        Adithya - Software Engineer | Full Stack Developer | Technical Lead
       </h1>
     </div>
   );

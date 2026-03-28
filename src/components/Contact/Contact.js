@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 export default function Contact() {
   const [show, setShow] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
-  const [copiedToClipboard, setCopiedToClipboard] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   function handleContactPopUp() {
@@ -17,16 +16,6 @@ export default function Contact() {
   }
   function showEmailSlide() {
     setShowEmail(true);
-  }
-
-  async function copyMyEmail() {
-    try {
-      await navigator.clipboard.writeText("adhimakkimane99@gmail.com");
-      setCopiedToClipboard(true);
-      setTimeout(() => setCopiedToClipboard(false), 5000);
-    } catch (err) {
-      console.error("Failed to copy: ", err);
-    }
   }
 
   useEffect(() => {
@@ -46,11 +35,11 @@ export default function Contact() {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 1000, opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="emailPopupContainer fixed bottom-4 right-4 max-w-[400px] w-[90%] 
-              rounded-lg card-shadow cursor-pointer transition-all duration-300 
-              bg-white/5 backdrop-blur-md p-4 flex flex-col gap-4 text-center
+          className="emailPopupContainer fixed bottom-6 right-6 max-w-[400px] w-[90%] 
+              rounded-xl card-shadow cursor-pointer transition-all duration-300 
+              bg-white/10 backdrop-blur-lg p-6 flex flex-col gap-4 text-center
 
-              sm:bottom-2 sm:right-2 sm:w-[95%] sm:max-w-[350px] sm:p-3
+              sm:bottom-4 sm:right-4 sm:w-[95%] sm:max-w-[350px] sm:p-4
               xs:bottom-2 xs:right-2 xs:w-full xs:max-w-[320px] xs:p-3"
         >
           <h1 className="text-base font-mono">💬 Let’s Connect!</h1>
@@ -60,18 +49,13 @@ export default function Contact() {
                 <p className="font-mono">Let’s talk about what’s next.</p>
               )}
               <div className="flex gap-4 justify-center flex-wrap">
-                <div
-                  onClick={copyMyEmail}
-                  className="px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md text-white cursor-pointer w-[120px] flex items-center gap-[10px]"
+                <a
+                  href="mailto:adhimakkimane99@gmail.com"
+                  className="px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md text-white cursor-pointer w-[120px] flex items-center justify-center gap-[10px]"
                 >
-                  <CopyIcon /> {!copiedToClipboard ? " Email" : " Copied"}
-                </div>
-                <div
-                  className="px-4 py-2 rounded-lg bg-white/10 backdrop-blur-md text-white cursor-pointer"
-                  onClick={showEmailSlide}
-                >
-                  📩 Contact Me
-                </div>
+                  <MailIcon /> Email
+                </a>
+
               </div>
             </>
           ) : (
@@ -147,7 +131,7 @@ function EmailPopUp({ setShowEmail }) {
   );
 }
 
-function CopyIcon() {
+function PhoneIcon() {
   return (
     <svg
       width="20px"
@@ -157,7 +141,31 @@ function CopyIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M7.5 3H14.6C16.8402 3 17.9603 3 18.816 3.43597C19.5686 3.81947 20.1805 4.43139 20.564 5.18404C21 6.03969 21 7.15979 21 9.4V16.5M6.2 21H14.3C15.4201 21 15.9802 21 16.408 20.782C16.7843 20.5903 17.0903 20.2843 17.282 19.908C17.5 19.4802 17.5 18.9201 17.5 17.8V9.7C17.5 8.57989 17.5 8.01984 17.282 7.59202C17.0903 7.21569 16.7843 6.90973 16.408 6.71799C15.9802 6.5 15.4201 6.5 14.3 6.5H6.2C5.0799 6.5 4.51984 6.5 4.09202 6.71799C3.71569 6.90973 3.40973 7.21569 3.21799 7.59202C3 8.01984 3 8.57989 3 9.7V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.0799 21 6.2 21Z"
+        d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.24 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg
+      width="20px"
+      height="20px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M22 6L12 13L2 6"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"

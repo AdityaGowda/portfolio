@@ -2,10 +2,10 @@ export default function Footer() {
   return (
     <section
       className="p-20 text-center flex 
-   justify-end flex-col gap-10 mt-60 "
+   justify-end flex-col gap-10 mt-32 "
     >
       <div className="flex justify-center gap-10  cursor-pointer ">
-        <a href="https://www.linkedin.com/in/adithya-dev/">
+        <a href="https://www.linkedin.com/in/AdithyaMR/">
           <img
             src="/icons/linkedin.png"
             className=""

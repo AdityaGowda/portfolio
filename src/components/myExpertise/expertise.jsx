@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 export default function Expertise() {
   return (
-    <section className="expertiseContainer">
+    <section className="expertiseContainer pt-32 pb-32">
       <div className="flex flex-col justify-center items-center">
         <motion.h2
           className="header text-center text-7xl mb-16 font-extrabold max-950:text-5xl max-950:mb-10"
@@ -12,9 +12,9 @@ export default function Expertise() {
         >
           My Expertise
         </motion.h2>
-        <div className="expertiseSubContainer flex justify-center items-center flex-wrap m-10 max-950:w-[90%]">
+        <div className="expertiseSubContainer w-full max-w-[1500px] mx-auto px-5 lg:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden max-w-[400px] max-950:w-full max-950:mb-7 max-950:p-5 max-950:pt-7 max-950:m-2"
+            className="box border-2 border-solid border-white/20 rounded-xl bg-white/5 backdrop-blur-md w-full h-full p-8 overflow-hidden transition-all duration-300 hover:border-white/40 hover:-translate-y-1"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ once: true, duration: 0.3 }}
@@ -33,17 +33,17 @@ export default function Expertise() {
                 transition={{ once: true, duration: 0.3 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
-                Experienced in developing both front & back end technologies.
-                JavaScript, NodeJs, ExpressJs
+                Proficient in full-stack development, building scalable applications using JavaScript, Node.js, and Express.js, with a solid understanding of system architecture and backend services.
               </motion.h3>
               <span className="text-[#636668] max-950:text-sm">
                 &lt;/h3 &gt;
               </span>
             </div>
+
           </motion.div>
           {/* 1 */}
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:pt-7  max-950:p-5 max-950:m-2"
+            className="box border border-solid border-white/10 rounded-xl bg-white/5 backdrop-blur-md w-full max-w-[500px] p-8 overflow-hidden transition-all duration-300 hover:border-white/40 hover:-translate-y-1"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ once: true, duration: 0.4 }}
@@ -51,7 +51,7 @@ export default function Expertise() {
             <div className="flex gap-5">
               <SiJavascript />
               <h3 className="text-3xl mb-5 font-extrabold header  max-950:text-2xl">
-                Frontend Dev JavaScript,React
+                Frontend Development
               </h3>
             </div>
             <div className="">
@@ -62,8 +62,7 @@ export default function Expertise() {
                 transition={{ once: true, duration: 0.4 }}
                 className=" text-wrap  subHeader border-l-2 font-normal border-solid  border-[#636668] pl-4 ml-4 mt-2 mb-2 max-950:text-sm max-950:pl-6 "
               >
-                Passionate about UI with 2+ years of experience in HTML, CSS,
-                JS, jQuery, React, and Next.js.
+                Frontend-focused developer with 2+ years of experience designing and developing high-performance, responsive, and user-friendly interfaces using HTML, CSS, JavaScript, jQuery, React.js, and Next.js.
               </motion.h3>
               <span className="text-[#636668] max-950:text-sm ">
                 &lt;/h3&gt;
@@ -72,15 +71,16 @@ export default function Expertise() {
           </motion.div>
           {/* 2 */}
           <motion.div
-            className="box border-2 border-solid border-white w-96 p-10 pl-8 pr-8 overflow-hidden  max-w-[400px] max-950:w-full  max-950:mb-7 max-950:p-5 max-950:pt-7  max-950:m-2"
+            className="box border border-solid border-white/10 rounded-xl bg-white/5 backdrop-blur-md w-full max-w-[500px] p-8 overflow-hidden transition-all duration-300 hover:border-white/40 hover:-translate-y-1"
             initial={{ opacity: 0, y: 90 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ once: true, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <div className="flex gap-3 items-center mb-8">
               <AiOutlineCloud />
               <p className="text-4xl  font-extrabold header p-2max-950:text-3xl ">
-                DevOps
+                DevOps & Cloud
               </p>
             </div>
             <div className="">
@@ -90,9 +90,9 @@ export default function Expertise() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ once: true, duration: 0.5 }}
+                viewport={{ once: true, amount: 0.2 }}
               >
-                Hands-on experience with GCP and Azure, specializing in Docker,
-                Linux, automation, and networking
+                Experienced in cloud and DevOps practices with hands-on exposure to Google Cloud Platform (GCP) and Microsoft Azure, specializing in Docker, Linux environments, automation, and networking.
               </motion.h3>
               <span className="text-[#636668] max-950:text-sm">
                 &lt;/h3 &gt;
